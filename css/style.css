@@ -1,0 +1,46 @@
+.fa-facebook:before {
+content: "\f09a";
+}
+
+
+
+
+
+.social {
+	float: left;
+	margin: 2em 2em; width: 20px; height: 20px; 	
+	display: block; text-align: center; line-height:103px; color: #fff;
+
+	position: relative;
+	transform:rotateY(0deg);
+	transition:transform .25s ease-out;
+	transform-style:preserve-3d;
+}
+.social > div {
+	width: 20px; height: 20px; background: #505152;
+	position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+.social >.front {
+	transform:translateZ(10px);
+}
+.social >.back {
+	background: #3B5998; font-size: 3em;
+	transform:rotateY(-100deg) translateZ(10px);
+}
+
+
+.social.social-twitter > .back { background: #55ACEE; }
+.social.social-github > .back { background: #f3f3f3; color: #000; }
+.social.social-pinterest > .back { background: #e3262e; }
+.social.social-googleplus > .back { background: #dd4B39; }
+.social.social-skype > .back { background: #12A5F4; }
+.social.social-linkedin > .back { background: #4875B4; }
+.social.social-dribbble > .back { background: #ea4c89; }
+
+/* Hover */
+.social:hover {
+	transform: rotateY(100deg);
+}
